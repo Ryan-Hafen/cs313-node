@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title><%= title %></title>
+		<link rel='stylesheet' href='/stylesheets/style.css' />
+	</head>
+	<body>
+		<h1>Calculate Postage Costs</h1>
+		<form action="/result" method="POST">
+			<label for="mailType">Mail Type</label>
+			<select class="mailType" name="mailType">
+				<option value="Letters (Stamped)">Letters (Stamped)</option>
+				<option value="Letters (Metered)">Letters (Metered)</option>
+				<option value="Large Envelopes (Flats)">Large Envelopes (Flats)</option>
+				<option value="First-Class Package Service—Retail">First-Class Package Service—Retail</option>
+			</select>
+			<br>
+			<br>
+			<label for="mailWeight">Mail Weight</label>
+			<input type="text" name="mailWeight" value="" />
+			<br>
+			<br>
+			<input type="submit" />
+		</form>
+	</body>
+</html>
+
